@@ -1,14 +1,21 @@
 import React, {useState} from 'react'
 
 const Estados=()=>{
-const [nombre,setNombre]=useState ("Karen");
-
-
+    const [nombre, setNombre]= useState ("Karen");
+    const cambiarNombre =()=>{ 
+    if (nombre=="karen"){   
+        setNombre ("Juan");
+ }else{   
+    setNombre("Karen");       
+}
+   
+}
 return(
 <div>
     {nombre}
+    <br/>
+<button onClick= {cambiarNombre}> Cambiar nombre</button>
 </div>
-
 
 
 )

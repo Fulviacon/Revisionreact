@@ -1,9 +1,9 @@
 import React from 'react';
 const Eventos= () => {
 const saludar =() => {  
-    alert ("Hola")
+    {/*alert ("Hola")*/}
 }
-returm(
+return(
 <div>
     <button onClick={saludar}>Click</button>
 </div>
