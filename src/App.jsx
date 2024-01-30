@@ -1,21 +1,19 @@
 import './App.css';
-import Users from './components/Users';
+import Estados from "./components/Estados"
+import Eventos from "./components/Eventos"
 
-function App (){
-return(
+function App(){
+    return(
+        <>
+        <h1>Hola Alumnos</h1>
+        <p>Hola ssoy Karen,......</p>
+        <Eventos/>
+        <Estados/>
+        
+        
+        </>
+    )
+}
 
-<> 
-<Users/>
 
-<div className='container'>
-  
- 
-<hr/>
-<ul/>
-
-</div>
-</>
-);
-
-};
 export default App;
