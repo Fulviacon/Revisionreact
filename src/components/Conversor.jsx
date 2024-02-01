@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from "react"
+
 
 const Conversor = () => {
 const [conversor, setConversor]= useState (0);
-const convertir = (e)=>{  
+const convertir = (e) => {  
+  let monto = parseFloat(e.target.value);
+  let cotizar = monto / 300;
+  setConversor(cotizar);
+
+
+{/*const convertir = (e)=>{  
     let monto=e.target.value;
-    let cotizar =monto/300;
-    setConversor (cotizar);
+    let cotizar = monto / 300;
+setConversor (cotizar);*/}
 }
   return (
     <div>
